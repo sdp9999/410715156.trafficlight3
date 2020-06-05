@@ -8,9 +8,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.EditText;
 
 public class GameActivity extends AppCompatActivity {
-
+    private EditText et_Name;
     GameSurfaceView GameSV;
     Handler handler;
 
@@ -32,7 +33,7 @@ public class GameActivity extends AppCompatActivity {
 
 
         setContentView(R.layout.activity_game);
-
+       // et_Name =et_Name = (EditText) findViewById(R.id.et_Name);
         GameSV = (GameSurfaceView) findViewById(R.id.GameSV);
         //設定初始測試之燈號秒數
         GameSV.SetLightSec(6, 2, 3);
